@@ -1,0 +1,18 @@
+<a href="/">HOME</a>
+<a href="/uploader">Upload</a>
+<a href="/deletefile">Delete</a>
+<br><hr>
+<h1>IBM Object Storage</h1>
+
+
+<!doctype html>
+<html>
+   <body>
+      {% for row in files %}
+         <div style="border: 1px solid #EFEFEF;margin:10px;">
+            <h3>Filename : {{row}} </h3>
+            <img src="https://flaskapp123.s3.jp-tok.cloud-object-storage.appdomain.cloud/{{row}}" width="150px"></td>
+         </div>
+      {% endfor %}
+   </body>
+</html>

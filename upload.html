@@ -1,0 +1,26 @@
+<html>
+   <body>
+
+
+<a href="/">HOME</a>
+<a href="/uploader">Upload </a>
+<a href="/deletefile">Delete </a>
+<br><hr>
+
+<h1>IBM Upload File</h1>
+
+      <form action = "/uploader" method = "POST" 
+         enctype = "multipart/form-data">
+		 <input type = "text" placeholder="Enter bucket name" name = "bucket" />
+		 <br>
+		 <br>
+		 <input type = "text" placeholder="Enter file name" name = "filename" />
+		 <br>
+		 <br>
+         <input type = "file" name = "file" />
+		 <br>
+		 <br>
+         <input type = "submit"/>
+      </form>   
+   </body>
+</html>
